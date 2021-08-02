@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let employee = {
+            name: 'Mohammad',
+            age: 17,
+            location: 'New York',
+            "full address": null,
+            paycheckHistory: [
+                {
+                    month: 'February',
+                    amount: 2000
+                },
+                {
+                    month: 'January',
+                    amount: 1000
+                },
+                {
+                    month: 'December',
+                    amount: 1000
+                }
+            ]
+        }
+
+        function getEmployeeSummary(employeeDetails) {
+            let employeeSummary = `${employeeDetails.name} is ${employeeDetails.age} years old, lives in ${employeeDetails.location} and his last paycheck was $${employeeDetails.paycheckHistory[0].amount}`
+            return employeeSummary
+        }
+        
+        console.log(`Employee Summery : ` + getEmployeeSummary(employee))
+
+    </script>
+</body>
+</html>
