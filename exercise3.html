@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function calculateGradeFromScore(scoreGain, totalScore) {
+            console.log(`Student got ${scoreGain} out of ${totalScore}`)
+            let studentPercentage = (scoreGain*100)/totalScore
+            let studentResult
+            if (studentPercentage >= 90 && studentPercentage <= 100) {studentResult = `A (${studentPercentage}%)`}
+            else if (studentPercentage >= 80 && studentPercentage <= 89) {studentResult = `B ${studentPercentage}%`}
+            else if (studentPercentage >= 70 && studentPercentage <= 79) {studentResult = `C ${studentPercentage}%`}
+            else if (studentPercentage >= 60 && studentPercentage <= 69) {studentResult = `D ${studentPercentage}%`}
+            else if (studentPercentage <= 59) {studentResult = `F ${studentPercentage}%`}
+            else {studentResult = `Unknown grade result. Please check gained score: ${scoreGain} and total score: ${totalScore}`}
+            return `You got a ${studentResult}`
+        }
+
+        console.log(`Student Result : ${calculateGradeFromScore(1500, 20)}`)
+
+    </script>
+</body>
+</html>
