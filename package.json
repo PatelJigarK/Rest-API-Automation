@@ -1,0 +1,24 @@
+{
+  "name": "rest-api-automation",
+  "version": "1.0.0",
+  "description": "REST API Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatelJigarK/Rest-API-Automation.git"
+  },
+  "author": "Jigar Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatelJigarK/Rest-API-Automation/issues"
+  },
+  "homepage": "https://github.com/PatelJigarK/Rest-API-Automation#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3",
+    "request-promise": "^4.2.6"
+  }
+}
